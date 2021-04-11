@@ -4,8 +4,8 @@ section .data
     message db 'Hello World !', 10
 
 section .text
-    global _start:
-    _start
+    global _start
+    _start:
         mov rax, 1                  ; equivalent de l'appel systeme write
         mov rdi, 1                  ; declaration de l'argument, le 1 ici est le stdout
         mov rsi, message            ; autre argument
